@@ -1,0 +1,15 @@
+<h2>Login</h2>
+<form>
+  <div>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="{{ showPassword ? 'text' : 'password' }}" id="password" name="password" [(ngModel)]="password">
+    <button type="button" (click)="togglePasswordVisibility()" aria-label="Toggle password visibility">
+      <i [class]="showPassword ? 'fa fa-eye-slash' : 'fa fa-eye'"></i>
+    </button>
+  </div>
+  <button type="submit" (click)="login()">Login</button>
+</form>

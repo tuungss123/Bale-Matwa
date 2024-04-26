@@ -1,0 +1,76 @@
+<!-- <div class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <form [formGroup]="nameForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" formControlName="donor_name" required>
+          </div>
+   
+          <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="text" formControlName="email" required>
+          </div>
+   
+          <div class="form-group">
+            <label>Contact</label>
+            <input class="form-control" type="text" formControlName="contact" required>
+          </div>
+
+          <div class="form-group">
+            <label>Fund</label>
+            <input class="form-control" type="text" formControlName="fund" required>
+          </div>
+   
+          <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit">Submit</button>
+          </div>
+        </form>
+    </div>
+  </div>
+-->
+  <section class="contact" id="contact">
+    <div class="contact-form">
+      <div class="first-container">
+        <div class="info-container">
+          <div>
+            <img class="icon" />
+            <h3>Address</h3>
+            <p style="color: #F3DE2C;">Holy Angel University</p>
+          </div>
+          <div>
+            <img class="icon" />
+            <h3>Lets Talk</h3>
+            <p>+97 9175698662</p>
+          </div>
+          <div>
+            <img class="icon" />
+            <h3>Email</h3>
+            <p>izakayaislands@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <h2>Donate Now!</h2>
+        <form [formGroup]="nameForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="name-input">Tell us your name*</label>
+            <input class="form-control" type="text" formControlName="donor_name" required>
+          </div>
+          <div class="form-group">
+            <label for="email-input">Enter your email*</label>
+            <input class="form-control" type="text" formControlName="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone-input">Enter phone number*</label>
+            <input class="form-control" type="text" formControlName="contact" required>
+          </div>
+          <div class="form-group">
+            <label for="phone-input">Donation*</label>
+            <input class="form-control" type="text" formControlName="fund" required>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
